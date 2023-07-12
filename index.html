@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar Criptomonedas</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="formulario" id="formulario">
+            <h2 class="titulo-formulario">Cotiza tu criptomoneda</h2>
+                <div class="col">
+                    <label>Elige tu Moneda</label>
+                    <select
+                        class="selector"
+                        id="moneda"
+                        name="moneda"
+                    >
+                            <option value="" disabled selected>Elige tu moneda</option>
+                            <option value="USD">Dolar Estadounidense</option>
+                            <option value="CLP">Peso Chileno</option>
+                            <option value="GBP">Libras</option>
+                            <option value="EUR">Euros</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label>Elige tu Criptomoneda</label>
+                    <select 
+                        class="selector"
+                        id="criptomonedas"
+                        name="criptomoneda"
+                    >
+                        <option value="" disabled selected>Elige tu criptomoneda</option>
+                    </select>
+                </div>
+            <input class="" type="submit" value="COTIZAR"/>
+        </form>
+
+        <div class="container" id="resultado"></div>
+
+    </div>
+
+    <div class="alertas" id="container-alertas"></div>
+
+    <footer>
+        <div class=""></div>
+    </footer>
+    <script src="js/app.js" type="module"></script>
+    
+</body>
+</html>
